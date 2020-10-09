@@ -18,7 +18,7 @@ clear all;
 
 % video_fname = '/path2thevideo/Drone_video.MP4';
 
-video_fname = 'C:\Seth\MATLAB\MATLAB\MATLAB_SURF\Operation_Drone\Necessary_MATLAB_files_github\Necessary_MATLAB_files\video_over_elbe.mp4';
+video_fname = 'C:\Seth\MATLAB\MATLAB\MATLAB_SURF\Team_Bay_Drones\Drones_and_the_bay\video_over_elbe.mp4';
 
 isfile('video_over_elbe.mp4');
 % get video position in DJI drone

@@ -95,7 +95,7 @@ end
 
 CopterCurrents_calibration_filename = 'Phantom3_v1_FOV_3840x2160.mat';
 % load calibration data
-p
+
 
  isfile(CopterCurrents_calibration_filename);
 pwd;
