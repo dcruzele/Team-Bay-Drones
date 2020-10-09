@@ -98,7 +98,7 @@ CopterCurrents_calibration_filename = 'Phantom3_v1_FOV_3840x2160.mat';
 
 
  isfile(CopterCurrents_calibration_filename);
-pwd;
+
 if isfile(CopterCurrents_calibration_filename)
 
     load(CopterCurrents_calibration_filename,'CopterCurrents_CamCalib');
@@ -155,8 +155,9 @@ end
 
 
 
-% check image size
-num2str(ny)
+% Check image size; Used in debugging
+num2str(ny);
+
 if v.Height ~= ny
 
     disp(['CopterCurrents_CamCalib Height: ' num2str(ny)]);
@@ -199,7 +200,7 @@ Georeference_Struct_config.CopterCurrents_CamCalib = CopterCurrents_CamCalib;
 
 Georeference_Struct_config.CamPos_ST = get_Camera_Position_Struct_mavicmini(video_fname);
 
-Georeference_Struct_config.CamPos_ST.yaw
+Georeference_Struct_config.CamPos_ST.yaw;
 
 
 end

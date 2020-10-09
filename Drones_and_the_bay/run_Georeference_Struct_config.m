@@ -1,6 +1,6 @@
 
 function [IMG_SEQ] = run_Georeference_Struct_config(Georeference_Struct_config)
-pwd
+
 
 
 
