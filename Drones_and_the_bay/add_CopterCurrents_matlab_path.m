@@ -1,6 +1,6 @@
 % add CopterCurrents folders and subfolders to matlab path
 % isfile('MediaInfo.exe')
-%
+%Is this working??
 
 %
 % Im awesome!
