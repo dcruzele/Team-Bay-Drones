@@ -23,6 +23,9 @@ video_fname = 'C:\Seth\MATLAB\MATLAB\MATLAB_SURF\Team_Bay_Drones\Drones_and_the_
 isfile('video_over_elbe.mp4');
 % get video position in DJI drone
 
+
+time_limits = [2 5]
+
 [CamPos_ST] = get_Camera_Position_Struct_mavicmini(video_fname);
 
 
@@ -39,11 +42,10 @@ isfile('video_over_elbe.mp4');
 
 % time stamps to be used in the video [initial_time  end_time]
 
-time_limits = [0 1];
+time_limits = [2 5];
 %This time_limits does't work, use time_limits in in
-%create_georeference_struct
 
-time_limits;
+time_limits
 
 % time between frames in seconds
 
@@ -89,7 +91,7 @@ CopterCurrents_calibration_filename = 'C:\Seth\MATLAB\MATLAB\MATLAB_SURF\Necessa
 
 IMG_SEQ = run_Georeference_Struct_config(Georeference_Struct_config);
 
-time_limits
+
 
 % save('IMG_SEQ.mat','IMG_SEQ','-v7.3','-nocompression');
 

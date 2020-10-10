@@ -15,13 +15,14 @@ if exist('dt','var') == 0 || isempty(dt)
 end
 
 
+
 if exist('time_limits','var') == 0 || isempty(time_limits) 
 
-     time_limits = [0 2];
+     time_limits = [0 .5];
 
 end
 
-time_limits;
+time_limits
 
 if exist('offset_home2water_Z','var') == 0 || isempty(offset_home2water_Z)
 
@@ -37,9 +38,40 @@ if ~isempty(video_fname)
 
     v = VideoReader(video_fname);
     
-    v %Take out the semicolon when debugging whether or not the videoreader works properly
+ 
+ 
     
-  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 
     dt_gap_video =  1/v.FrameRate;
@@ -97,7 +129,7 @@ CopterCurrents_calibration_filename = 'Phantom3_v1_FOV_3840x2160.mat';
 % load calibration data
 
 
- isfile(CopterCurrents_calibration_filename);
+ 
 
 if isfile(CopterCurrents_calibration_filename)
 

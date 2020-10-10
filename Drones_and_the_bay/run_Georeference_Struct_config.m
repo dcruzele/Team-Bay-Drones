@@ -154,16 +154,16 @@ function [IMG_SEQ] = run_Georeference_Struct_config(Georeference_Struct_config)
 % import create_georeference_struct.m
 
 
-addpath('E:\MATLAB\MATLAB_SURF\Necessary_MATLAB_files')
+addpath('E:\MATLAB\MATLAB_SURF\Necessary_MATLAB_files');
 
-video_fname = 'video_over_elbe.MP4'
+
 
 Georeference_Struct_config = create_georeference_struct('video_over_elbe.MP4') %%%%% causes Matlab to call from another function
     %% heading = Georeference
 
-pwd
-Georef = Georeference_Struct_config.CamPos_ST  % this works, takes CamPos_ST data from create_georeference_struct
-heading = Georeference_Struct_config.CamPos_ST.yaw % heading works, takes the yaw from create_georeference_struct
+
+Georef = Georeference_Struct_config.CamPos_ST;  % this works, takes CamPos_ST data from create_georeference_struct
+heading = Georeference_Struct_config.CamPos_ST.yaw; % heading works, takes the yaw from create_georeference_struct
 
 pitch = Georeference_Struct_config.CamPos_ST.pitch; % works
 
@@ -188,7 +188,7 @@ Height_drone = Georeference_Struct_config.CamPos_ST.Height;
 
 
 % check CopterCurrents_CamCalib type
-A = Georeference_Struct_config.CopterCurrents_CamCalib
+A = Georeference_Struct_config.CopterCurrents_CamCalib;
 [GeoMode] = getGeoMode_from_CopterCurrents_CamCalib(Georeference_Struct_config.CopterCurrents_CamCalib);
 
 
