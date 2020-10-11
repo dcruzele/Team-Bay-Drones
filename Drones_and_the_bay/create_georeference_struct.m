@@ -18,11 +18,11 @@ end
 
 if exist('time_limits','var') == 0 || isempty(time_limits) 
 
-     time_limits = [0 .5];
+     time_limits = [0 30];
 
 end
 
-time_limits
+
 
 if exist('offset_home2water_Z','var') == 0 || isempty(offset_home2water_Z)
 
@@ -36,43 +36,7 @@ if ~isempty(video_fname)
     
   %%  video_fname = 'video_over_elbe.MP4';
 
-    v = VideoReader(video_fname);
-    
- 
- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    v = VideoReader(video_fname); 
 
     dt_gap_video =  1/v.FrameRate;
 

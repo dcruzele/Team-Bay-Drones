@@ -24,7 +24,7 @@ isfile('video_over_elbe.mp4');
 % get video position in DJI drone
 
 
-time_limits = [2 5]
+
 
 [CamPos_ST] = get_Camera_Position_Struct_mavicmini(video_fname);
 
@@ -42,10 +42,9 @@ time_limits = [2 5]
 
 % time stamps to be used in the video [initial_time  end_time]
 
-time_limits = [2 5];
+time_limits = [0 1];
 %This time_limits does't work, use time_limits in in
 
-time_limits
 
 % time between frames in seconds
 
@@ -88,6 +87,9 @@ CopterCurrents_calibration_filename = 'C:\Seth\MATLAB\MATLAB\MATLAB_SURF\Necessa
 % Apply Georeference_Struct_config and retrieve the Image sequence
 
 % corrected
+
+% Up to this point, time_limits is read as the value from
+% Run_CopterCurrents_scripts.m, The error is in IMG_SEQ = 
 
 IMG_SEQ = run_Georeference_Struct_config(Georeference_Struct_config);
 

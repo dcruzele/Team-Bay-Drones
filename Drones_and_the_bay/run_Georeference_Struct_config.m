@@ -154,11 +154,14 @@ function [IMG_SEQ] = run_Georeference_Struct_config(Georeference_Struct_config)
 % import create_georeference_struct.m
 
 
-addpath('E:\MATLAB\MATLAB_SURF\Necessary_MATLAB_files');
+%addpath('E:\MATLAB\MATLAB_SURF\Necessary_MATLAB_files');
 
 
 
-Georeference_Struct_config = create_georeference_struct('video_over_elbe.MP4') %%%%% causes Matlab to call from another function
+%Georeference_Struct_config =
+%create_georeference_struct('video_over_elbe.MP4'); %%%%% causes Matlab to
+%call from another function, tomorrow compare to origional program, this
+%line of code caused matlab to not read the correct time limits data
     %% heading = Georeference
 
 
