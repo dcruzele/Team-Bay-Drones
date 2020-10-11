@@ -242,6 +242,8 @@ FG_fit =  struct('signal_2D',signal_FG_2D,'noise_2D',noise_FG_2D, 'signal_nvalue
 
 % create SG vectors
 
+
+
 Ux_SG_2D = fit_param.Ux_SG_2D + Ux_fit_FG;
 
 Uy_SG_2D = fit_param.Uy_SG_2D + Uy_fit_FG;
